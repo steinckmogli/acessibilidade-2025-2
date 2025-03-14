@@ -4,57 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore casas fluviais e como elas se adaptam à vida na água. Saiba mais sobre sustentabilidade e design inovador.">
+    <meta name="author" content="Seu Nome">
     <title>Casas Fluviais Sustentáveis</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <nav>
+    <!-- Cabeçalho e Navegação -->
+    <header role="banner">
+        <nav role="navigation">
             <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#galeria">Galeria</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#inicio" aria-label="Ir para Início">Início</a></li>
+                <li><a href="#sobre" aria-label="Ir para a seção Sobre">Sobre</a></li>
+                <li><a href="#galeria" aria-label="Ver Galeria de Casas Fluviais">Galeria</a></li>
+                <li><a href="#contato" aria-label="Ir para Contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Seção de Introdução -->
     <section id="inicio" class="intro">
-        <h1>Casas Fluviais: A Vida na Água</h1>
-        <p>Explore a tendência crescente das casas fluviais, uma opção sustentável e inovadora para viver à beira da água. Descubra como elas funcionam e por que são uma escolha ecológica.</p>
-    </section>
-
-    <section id="sobre" class="sobre">
-        <h2>O que são Casas Fluviais?</h2>
-        <p>As casas fluviais são residências construídas sobre a água, com design adaptado para flutuar em rios, lagos ou até oceanos. Elas oferecem uma maneira única de viver de forma mais próxima à natureza.</p>
-        <img src="casafluviadapratica.jpg" alt="Exemplo de casa fluvial sustentável sobre a água" />
-    </section>
-
-    <section id="galeria" class="galeria">
-        <h2>Galeria de Casas Fluviais</h2>
-        <div class="image-gallery">
-            <img src="casafluviapaisagem.jpg" alt="Casa fluvial com vista para o rio" />
-            <img src="casafluviaesustentavel.jpg" alt="Casa fluvial sustentável com painel solar" />
-            <img src="casafluviadentro.jpg" alt="Interior de uma casa fluvial mostrando o design moderno" />
+        <h1>Casas Fluviais: Viva no Coração da Natureza</h1>
+        <p>As casas fluviais são uma alternativa inovadora e sustentável para quem busca um estilo de vida mais próximo à natureza. Descubra como esses projetos arquitetônicos se adaptam à vida sobre a água.</p>
+        <div class="imagem-principal">
+            <img src="casafluvial2.jpg" alt="Imagem de uma casa fluvial moderna sobre a água.">
         </div>
     </section>
 
+    <!-- Seção Sobre -->
+    <section id="sobre" class="sobre">
+        <h2>O que são Casas Fluviais?</h2>
+        <p>As casas fluviais são construções que flutuam sobre rios, lagos ou até mesmo oceanos, proporcionando uma experiência única de vida sobre a água. Elas são projetadas para garantir sustentabilidade, conforto e interação direta com o meio ambiente aquático.</p>
+        <div class="imagem-sobre">
+            <img src="casa3.jpg" alt="Casa fluvial flutuando tranquilamente sobre um rio tranquilo.">
+        </div>
+    </section>
+
+    <!-- Galeria de Imagens -->
+    <section id="galeria" class="galeria">
+        <h2>Galeria de Casas Fluviais</h2>
+        <div class="grid-galeria">
+            <div class="imagem-galeria">
+                <img src="casaa4.jpg" alt="Vista panorâmica de uma casa fluvial à noite iluminada sobre a água.">
+            </div>
+            <div class="imagem-galeria">
+                <img src="casa5.jpg" alt="Interior moderno e minimalista de uma casa fluvial.">
+            </div>
+            <div class="imagem-galeria">
+                <img src="casa6.jpg" alt="Casa fluvial sustentável com painel solar e sistema de captação de água da chuva.">
+            </div>
+            <div class="imagem-galeria">
+                <img src="casa7.jpg" alt="Casa fluvial com jardim suspenso e vista para o rio.">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
     <section id="contato" class="contato">
         <h2>Entre em Contato</h2>
-        <form action="#" method="POST">
+        <p>Gostou do conceito das casas fluviais? Entre em contato para saber mais ou solicitar um orçamento.</p>
+        <form action="#" method="POST" role="form">
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+            
             <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" required></textarea>
+            <textarea id="mensagem" name="mensagem" required placeholder="Digite sua mensagem"></textarea>
+            
             <button type="submit">Enviar</button>
         </form>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Casas Fluviais. Todos os direitos reservados.</p>
+    <!-- Rodapé -->
+    <footer role="contentinfo">
+        <p>&copy; 2025 Casas Fluviais. Todos os direitos reservados à Nicolas.</p>
     </footer>
 
 </body>
